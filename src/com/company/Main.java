@@ -11,11 +11,14 @@ public class Main {
         System.out.println("Skaičiai masyve: " + kiekis);
         for (int i = 0; i < 10; i++) {
             if (skaiciai[i] > 0) {
-                suma=suma*skaiciai[i];
-                System.out.println(suma);
+                System.out.println(sumosSkaiciavimas(skaiciai,suma,i));
                 teigiamiSkaiciai++;
             }
         }
         System.out.println("Teigiami skaičiai: " + teigiamiSkaiciai);
+    }
+    static int sumosSkaiciavimas(int[] skaiciai,int suma,int i){
+        suma=suma*skaiciai[i];
+        return suma;
     }
 }
